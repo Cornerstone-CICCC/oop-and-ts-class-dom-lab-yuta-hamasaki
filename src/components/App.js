@@ -28,8 +28,6 @@ export class App extends Component {
   }
 
   handleAddTodo(todoText) {
-    if (todoText) {
       this.todoContext.addTodo({ text: todoText });
-    }
   }
 }

@@ -11,10 +11,8 @@ export class AddTodo extends Component {
 
     addElement.querySelector('#todo-add-btn').addEventListener('click', () => {
       const input = addElement.querySelector('#todo-input');
-      if (this.props.onAdd) { 
         this.props.onAdd(input.value);  
         input.value = '';  
-      }
     });
 
     return addElement;
